@@ -18,12 +18,14 @@ jobs:
           ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
   
         
-      - name: Deploy Docker Compose on EC2
+      - name: Deploying code on EC2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@13.200.156.51 << EOF
             set -e
             cd /home/ubuntu/pi-sectheta-website
+            git branch
             git pull https://github.com/panacea-infosec/pi-sectheta-website
+            npm -v
             npm install
             cd /home/ubuntu
             ./restart.sh
