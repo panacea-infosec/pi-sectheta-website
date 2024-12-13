@@ -23,10 +23,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no ubuntu@13.200.156.51 << EOF
             set -e                                          
             export NVM_DIR="/home/ubuntu/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-            nvm use 23.4.0
-            node -v
-            npm -v
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # Load NVM
+            nvm use 23.4.0 
             cd /home/ubuntu/pi-sectheta-website
             git branch
             git pull https://github.com/panacea-infosec/pi-sectheta-website
