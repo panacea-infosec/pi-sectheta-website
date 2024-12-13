@@ -1,0 +1,26 @@
+/* Container styling for Program Modules */
+.program-modules {
+    display: grid;
+    grid-template-columns: 1fr; /* Default for small screens */
+    gap: 16px; /* Adjust spacing between items */
+    place-items: center;
+    /* background-image: url('program_modules.png'); Replace with the correct path */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    width: 100%;
+    padding: 20px; /* Optional for extra spacing */
+  }
+  
+  /* Responsive grid layout for larger screens */
+  @media (min-width: 600px) {
+    .program-modules {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens and above */
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .program-modules {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    }
+  }
+  

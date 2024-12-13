@@ -1,0 +1,12 @@
+/* Styling for the program journey component */
+.program-journey {
+    padding: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .program-journey {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  

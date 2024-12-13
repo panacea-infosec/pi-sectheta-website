@@ -1,0 +1,140 @@
+.footer {
+  display: flex;
+  padding: 0 ;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-evenly; */
+  /* margin: 0 auto; */
+
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-icon {
+  color: #da3d33;
+  display: flex;
+  font-size: 36px;
+  /* Adjust for balance */
+}
+
+.footer-text {
+  font-size: 1.25rem;
+  /* Slightly larger text */
+  font-family: 'Roboto', sans-serif;
+  /* Ensure consistent font */
+}
+
+.footer-button {
+  margin-top: 16px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background-color: #df3939de;
+  /* Primary button color */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: none;
+  /* Keep original casing */
+}
+
+.footer-button:hover {
+  background-color: #9f1515;
+  /* Darker shade on hover */
+}
+
+/* Responsive styling */
+@media (min-width: 601px) {
+
+  .footer {
+    display: flex;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    padding:  0 0.5rem 0 0.5rem ;
+    /* justify-content: space-evenly; */
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 15px;
+
+  }
+
+  .footer-icon {
+    display: flex;
+    font-size: 28px;
+    /* Adjust icon size */
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    display: flex;
+    /* Adjust text size */
+  }
+
+  .footer-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 550px;
+    margin-bottom: 20px;
+
+    /* padding: 10px 20px; */
+    /* Adjust button padding */
+    font-size: 0.9rem;
+    /* Adjust button font size */
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: none;
+    padding: 12px 8px;
+    /* Adjust padding for very small screens */
+  }
+
+  .footer-container {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    /* Stack the footer content vertically */
+    gap: 8px;
+    /* Reduce gap between items */
+  }
+
+
+  .footer-text {
+    display: flex;
+    font-size: 0.9rem;
+
+    /* Smaller text size */
+
+  }
+
+  .footer-button {
+    padding: 10px 10px 10px 10px;
+    font-size: 0.8rem;
+    /* Smaller button font size */
+  }
+}

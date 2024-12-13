@@ -1,0 +1,135 @@
+/* General Styling */
+.enroll-container {
+  width: 100%;
+  margin-top: -14px;
+  display: grid;
+  place-items: center;
+  background-color: #da3d33;
+}
+
+.enroll-title,
+.enroll-subtitle {
+  color: white;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  font-weight: 600 !important;
+}
+
+.enroll-title {
+  font-weight: 600;
+  line-height: 1.4;
+  width: 90%;
+  padding: 2%;
+}
+
+.enroll-subtitle {
+  font-weight: 400;
+  width: 90%;
+  padding-bottom: 4%;
+  margin: 0 2%;
+}
+
+.card-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  margin: 16px;
+  width: 485px;
+  height: 135px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-box:hover {
+  transform: scale(1.09);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-text {
+  padding: 16px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.text-box-container {
+  background-color: #da3d33;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 20px;
+}
+
+.text-box {
+  background-color: white;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-box:hover {
+  transform: scale(1.09);
+}
+
+.text-box-dark {
+  background-color: #22242c;
+  color: white;
+}
+
+@media (min-width: 601px) {
+  .card-container {
+    flex-direction: row;
+    /* Make the card container row-wise on larger screens */
+    justify-content: space-evenly;
+  }
+
+  .card-box {
+    width: 30%;
+    /* Set width for cards to be smaller and fit side by side */
+  }
+}
+
+@media (max-width: 600px) {
+  .enroll-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Reduce gap between cards */
+  }
+
+  .card-box {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Make each card take up more space on smaller screens */
+    height: auto;
+    /* Allow cards to adjust height based on content */
+  }
+
+  .card-image{
+    width: 100%;
+  }
+}

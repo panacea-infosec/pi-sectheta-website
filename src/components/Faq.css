@@ -1,0 +1,153 @@
+/* Faq.css */
+
+/* Container Styling */
+.faq-container {
+    display: grid;
+    place-items: center;
+  }
+  
+  /* Title Styling */
+  .faq-title {
+    color: #2c2c2c;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 100%;
+  }
+  
+  /* Accordion Styling */
+  .accordion {
+    width: 70%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: none;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .accordion:hover {
+    transform: scale(1.05);
+    box-shadow: -9px -9px 18px #f2f2f2, 9px 9px 18px #f2f2f2;
+  }
+  
+  .accordion:first-of-type {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .accordion:last-of-type {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 6rem;
+  }
+  
+  .accordion::before {
+    display: none; /* Removes the default line before accordion */
+  }
+  
+  /* Accordion Summary Styling */
+  .accordion-summary {
+    background-color: #f8f4f4;
+    padding-top: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  .accordion-summary-text {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.4;
+    font-size: 20px;
+    word-spacing: 3px;
+  }
+  
+  /* Accordion Details Styling */
+  .accordion-details {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  .accordion-details-text {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.4;
+    font-size: 20px;
+    word-spacing: 3px;
+  }
+  
+  /* Animation for Accordion Expand/Collapse */
+  .accordion-summary {
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-summary:hover {
+    background-color: #f0e6e6;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets and devices with widths between 600px and 1024px */
+  @media (max-width: 1024px) {
+    .faq-title {
+      font-size: 28px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    .accordion {
+      width: 80%;
+    }
+  
+    .accordion-summary-text,
+    .accordion-details-text {
+      font-size: 18px;
+    }
+  }
+  
+  /* For mobile devices with widths below 600px */
+  @media (max-width: 600px) {
+    .faq-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.2rem ;
+        
+    }
+    .faq-title {
+      font-size: 24px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      justify-content: center;
+    }
+  
+    .accordion {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  
+    .accordion-summary-text,
+    .accordion-details-text {
+      font-size: 16px;
+      padding: 0rem 1rem;
+    }
+  
+    .accordion-summary {
+      padding: 10px 0;
+  
+    
+    .accordion-details {
+      padding: 15px;
+    }
+  
+    /* Optional: Adjust the accordion icon size */
+    .accordion-summary .MuiAccordionSummary-expandIcon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

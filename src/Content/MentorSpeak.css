@@ -1,0 +1,109 @@
+/* Mentor Speak Container */
+.mentor-speak-container {
+    display: flex;
+    background-color: #da3d33;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Flex layout adjustment for larger screens */
+@media (max-width: 600px) {
+    .mentor-speak-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .quote-text{
+        font-size: 20px !important;
+        width: 100%;
+        padding: 10px 0px 10px -10px ;
+        /* color: rgb(255, 255, 255); */
+        margin-bottom: 10px;
+    }
+    .mentor-name{
+        padding-left: 10px;
+        /* color: rgb(255, 255, 255); */
+    }
+}
+
+/* Left Quotation Mark Image */
+.quote-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    display: none; /* Initially hidden on small screens */
+}
+
+@media (min-width: 601px) {
+    /* .quote-img {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2; /* Ensures it's above the content */
+    /* } */
+} */
+
+/* Left Text Section */
+.text-section {
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 5%;
+    z-index: 2;
+    flex: 1;
+}
+
+.quote-text {
+    /* max-width: 600px; */
+    width: 100%;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mentor-position {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Right Circular Image */
+.circle-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.circle-img img {
+    max-height: 500px;
+    width: auto;
+    height: 100%;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .mentor-speak-container {
+        flex-direction: column;
+    }
+
+    .circle-img img {
+        max-height: 300px; /* Adjust circle image size on smaller screens */
+        margin-top: 20px;
+    }
+
+    .text-section {
+        padding: 20px;
+        font-size: 14px;
+    }
+}

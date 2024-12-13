@@ -1,0 +1,152 @@
+/* Panacea Legacy Container */
+.panacea-legacy-container {
+  width: 100%;
+  margin-top: 4%;
+  display: grid;
+  place-items: center;
+  background-color: #DA3D33;
+  padding-bottom: 4%;
+}
+
+/* Title */
+.panacea-legacy-title {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+  width: 100%;
+  padding: 2%;
+  margin-top: 15px !important;
+  background-color: #DA3D33;
+}
+
+/* Description */
+.panacea-legacy-description {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 2%;
+  width: 100%;
+  padding-bottom: 4%;
+  background-color: #DA3D33;
+  word-spacing: 4px;
+}
+
+/* Stats Container */
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4%;
+  color: #ffffff;
+  gap: 4%;
+  flex-wrap: wrap;
+  /* Allow stats to wrap in small screens */
+}
+
+/* Individual Stat Box */
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  flex: 1 1 180px;
+  /* Ensure that each stat box has some flexibility */
+}
+
+/* Divider Line Between Stats (except last item) */
+.divider {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding-right: 20px;
+  /* Adjust padding to ensure spacing */
+}
+
+/* Stat Number */
+.stat-number {
+  font-weight: bold;
+  font-family: 'Manrope', sans-serif;
+  font-size: 2.5rem;
+  /* Adjust size for visibility */
+}
+
+/* Stat Description */
+.stat-description {
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+  margin-top: 0.5rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+  .panacea-legacy-title {
+    font-size: 1.8rem;
+    /* Adjust title size for small screens */
+  }
+
+  .panacea-legacy-description {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    /* Stack stats vertically on smaller screens */
+    align-items: center;
+  }
+
+  .stat-box {
+    flex: 1 1 100%;
+    /* Allow each stat to take full width on mobile */
+    margin-bottom: 2%;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    /* Adjust number size for smaller screens */
+  }
+}
+
+@media (min-width: 601px) {
+  .panacea-legacy-container {
+    width: 100%;
+    /* margin-top: 2%; */
+  }
+
+  .panacea-legacy-title {
+    font-size: 2.5rem;
+    margin: -15px !important;
+    /* margin: 0.1rem !important; */
+    /* Larger title size for bigger screens */
+  }
+
+  .panacea-legacy-description {
+    font-size: 1.2rem;
+    width: 70%;
+    /* Reduce width for better alignment */
+    margin: 0 auto;
+    /* Center the description */
+  }
+
+  .stats-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .stat-box {
+    display: flex;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+  }
+}

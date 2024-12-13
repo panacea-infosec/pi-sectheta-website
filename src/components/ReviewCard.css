@@ -1,0 +1,62 @@
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 16px; /* Spacing between items */
+  }
+  
+  /* Review Card */
+  .review-card {
+    min-width: 300px;
+    max-width: 400px;
+    padding: 16px;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better UI */
+  }
+  
+  /* Review Header */
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  /* Avatar */
+  .review-avatar {
+    margin-right: 16px;
+  }
+  
+  /* Feedback Text */
+  .review-feedback {
+    margin-bottom: 16px;
+    line-height: 1.5;
+    color: #333; /* Improve readability */
+  }
+  
+  /* Arrow Buttons */
+  .arrow-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555; /* Neutral color for arrows */
+  }
+  
+  .arrow-button:hover {
+    color: #000; /* Darker color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .carousel-container {
+      flex-direction: column;
+      gap: 8px; /* Reduce gap on smaller screens */
+    }
+  
+    .arrow-button {
+      align-self: center; /* Center arrows for a stacked layout */
+    }
+  }
+  
