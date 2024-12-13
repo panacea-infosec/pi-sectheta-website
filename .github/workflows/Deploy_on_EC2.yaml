@@ -11,9 +11,7 @@ jobs:
       runs-on: ubuntu-latest
     
       steps:
-      # - name: Checkout code
-      #   uses: actions/checkout@v2
-    
+      
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.5.3
         with:
@@ -22,10 +20,10 @@ jobs:
         
       - name: Deploy Docker Compose on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@3.7.58.56 << EOF
+          ssh -o StrictHostKeyChecking=no ubuntu@13.200.156.51 << EOF
             set -e
-            cd /home/ubuntu/secTheta
-            git pull https://github.com/kaur-rajdeep/lms.git
+            cd /home/ubuntu/pi-sectheta-website
+            git pull https://github.com/panacea-infosec/pi-sectheta-website
             npm install
             npm run build
             sudo systemctl reload nginx 
