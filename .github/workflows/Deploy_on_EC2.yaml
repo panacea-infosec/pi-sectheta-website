@@ -21,13 +21,11 @@ jobs:
       - name: Deploying code on EC2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@13.200.156.51 << EOF
-            set -e
-            export PATH=$PATH:/usr/bin:/usr/local/bin                                          
+            set -e                                          
             cd /home/ubuntu/pi-sectheta-website
             git branch
             git pull https://github.com/panacea-infosec/pi-sectheta-website
-            npm -v
-            npm install
+            sudo npm install
             cd /home/ubuntu
             ./restart.sh
             sudo systemctl reload nginx 
