@@ -23,7 +23,7 @@ export const Sdgwheel = () => {
   }, []);
 
   return (
-    <div id="wheel-c-top">
+    <div id="wheel-c-top" className="wheel-c-top">
       <div
         className="az-element az-row row animated fadeInUp"
         

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Card, CardContent, Typography, Avatar, Box } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+import "./Carousel.css";
 
 const reviews = [
   {
@@ -9,17 +10,15 @@ const reviews = [
     feedback:
       "The feedback that we gave in each class was taken seriously, and the instructors improved dynamically in each session. My expectations from PI was x, and they delivered 2x. Whatever I thought I would get, PI ended up giving me so much more!",
     link: "Read more on Panacea Infosec",
-    avatar: "https://example.com/aditi-avatar.jpg", // add the actual avatar link or image URL
+    avatar: "https://example.com/aditi-avatar.jpg", // Replace with the actual avatar link or image URL
   },
   {
     name: "Nitin Verma",
     cohort: "New Batch 2022",
-    feedback:
-      "Something else as feedback",
+    feedback: "Something else as feedback",
     link: "Read more on Panacea Infosec",
-    avatar: "https://example.com/nitin-avatar.jpg", // add the actual avatar link or image URL
+    avatar: "https://example.com/nitin-avatar.jpg", // Replace with the actual avatar link or image URL
   },
-  // Add more reviews if needed
 ];
 
 const Carousel = () => {
@@ -38,20 +37,18 @@ const Carousel = () => {
   };
 
   return (
-    <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", padding: 4 }}>
-      {/* Left Arrow */}
-      <Button onClick={handlePrev}>
+    <Box className="carousel-container">
+      <Button onClick={handlePrev} className="arrow-button">
         <ArrowBackIos />
       </Button>
 
-      {/* Review Card */}
-      <Card sx={{ minWidth: 300, maxWidth: 400, padding: 2, margin: 2, fontFamily:'Roboto' }}>
+      <Card className="review-card">
         <CardContent>
-          <Box sx={{ display: "flex", alignItems: "center", marginBottom: 2 }}>
+          <Box className="review-header">
             <Avatar
               alt={reviews[activeIndex].name}
               src={reviews[activeIndex].avatar}
-              sx={{ marginRight: 2 }}
+              className="review-avatar"
             />
             <Box>
               <Typography variant="h6">{reviews[activeIndex].name}</Typography>
@@ -60,7 +57,7 @@ const Carousel = () => {
               </Typography>
             </Box>
           </Box>
-          <Typography variant="body1" sx={{ marginBottom: 2 }}>
+          <Typography variant="body1" className="review-feedback">
             {reviews[activeIndex].feedback}
           </Typography>
           <Typography color="primary" variant="body2" component="a" href="#">
@@ -69,8 +66,7 @@ const Carousel = () => {
         </CardContent>
       </Card>
 
-      {/* Right Arrow */}
-      <Button onClick={handleNext}>
+      <Button onClick={handleNext} className="arrow-button">
         <ArrowForwardIos />
       </Button>
     </Box>

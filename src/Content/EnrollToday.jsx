@@ -1,192 +1,86 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Box, Typography } from "@mui/material";
+import "./EnrollToday.css"; // Import the CSS file
 
 export const EnrollToday = () => {
   return (
-    <Box
-      sx={{ width: "100%", mt:'-14px', display: "grid", placeItems: "center", backgroundColor:'#DA3D33' }}
-    >
-         <Typography
-          variant="h4"
-          sx={{
-            color: "#ffffff",
-            fontFamily: "Manrope",
-            fontWeight: 600,
-            textAlign: "center",
-            lineHeight:1.4,
-            width:'90%',
-            padding:'2%',
-            backgroundColor:'#DA3D33'
-          }}
-        >
-          Are you ready to be tomorrow's leader in
-          <br /> cybersecurity?
-        </Typography>
-        <Typography
-          variant="body1"
-          sx={{
-            color: "#ffffff",
-            fontFamily: "Manrope",
-            fontWeight: 400,
-            textAlign: "center",
-            mx: "2%",
-            width:'90%',
-            paddingBottom:4,
-            backgroundColor:'#DA3D33'
-          }}
-        >
-          Enroll Today to Build a Successful Career
-        </Typography>
-        <Box sx={{width:'90%', display:'flex', flexDirection:{md:'row', xs:'column'}}}>
-        <Box sx={{ width: "90%", backgroundColor: "#DA3D33", mb:'40px' }}>
-        
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            borderRadius: "5px",
-            margin: 2,
-            width: "485px",
-            height: "135px",
-            backgroundColor: "white",
-            transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(1.09)'
-              },
-          }}
-        >
-          <Typography
-            variant="body1"
-            sx={{
-              padding: 2,
-              fontFamily: "Manrope",
-              fontWeight: "800",
-              fontSize: "18px",
-            }}
-          >
+    <Box className="enroll-container">
+      <Typography className="enroll-title" variant="h4">
+        Are you ready to be tomorrow's leader in
+        <br /> cybersecurity?
+      </Typography>
+      <Typography className="enroll-subtitle" variant="body1">
+        Enroll Today to Build a Successful Career
+      </Typography>
+
+      <Box className="card-container">
+        <Box className="card-box">
+          <Typography className="card-text">
             Future Chief Information Security Officer
           </Typography>
           <img
             src="1.png"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "5px",
-            }}
             alt="image"
+            className="card-image"
           />
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            borderRadius: "5px",
-            marginLeft:12,
-            width: "485px",
-            height: "135px",
-            backgroundColor: "white",
-            transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(1.09)'
-              },
-          }}
-        >
+        <Box className="card-box">
           <img
             src="2.png"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "5px",
-            }}
             alt="image"
+            className="card-image"
           />
-          <Typography
-            variant="body1"
-            sx={{
-              padding: 2,
-              fontFamily: "Manrope",
-              fontWeight: "800",
-              fontSize: "18px",
-            }}
-          >
+          <Typography className="card-text">
             Future Ethical Technology Advisor
           </Typography>
-          
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            borderRadius: "5px",
-            margin: 2,
-            width: "485px",
-            height: "135px",
-            backgroundColor: "white",
-            transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(1.09)'
-              },
-          }}
-        >
-          <Typography
-            variant="body1"
-            sx={{
-              padding: 2,
-              fontFamily: "Manrope",
-              fontWeight: "800",
-              fontSize: "18px",
-            }}
-          >
+        <Box className="card-box">
+          <Typography className="card-text">
             Future Payment Security Consultant
           </Typography>
           <img
             src="3.png"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "5px",
-            }}
             alt="image"
+            className="card-image"
           />
         </Box>
-      
       </Box>
-      <Box sx={{backgroundColor:'#DA3d33'}}>
-        <Box sx={{backgroundColor:'white', padding:'2%', margin:'2%', borderRadius:'20px', transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(1.09)'
-              },}}>
-            <Typography sx={{}}>You are a fresh or final year engineering or computer application graduate looking for a break in Information Security and Cyber security Industry.</Typography>
+
+      <Box className="text-box-container">
+        <Box className="text-box">
+          <Typography>
+            You are a fresh or final year engineering or computer application
+            graduate looking for a break in Information Security and Cyber
+            security Industry.
+          </Typography>
         </Box>
-        <Box sx={{backgroundColor:'#22242c', padding:'2%', margin:'2%', borderRadius:'20px',transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(1.09)'
-              },}}>
-            <Typography sx={{color:'white'}}>You want to be a future Chief Information Security Officer (CISO), Security Consultant or Ethical Hacking Technology Advisor.</Typography>
+        <Box className="text-box text-box-dark">
+          <Typography>
+            You want to be a future Chief Information Security Officer (CISO),
+            Security Consultant or Ethical Hacking Technology Advisor.
+          </Typography>
         </Box>
-        <Box sx={{backgroundColor:'white', padding:'2%', margin:'2%', borderRadius:'20px',transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(1.09)'
-              },}}>
-            <Typography sx={{}}>You have strong inclination towards future technologies in Information & Network and cybersecurity space.</Typography>
+        <Box className="text-box">
+          <Typography>
+            You have strong inclination towards future technologies in
+            Information & Network and cybersecurity space.
+          </Typography>
         </Box>
-        <Box sx={{backgroundColor:'#22242c', padding:'2%', margin:'2%', borderRadius:'20px', transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(1.09)'
-              },}}>
-            <Typography sx={{color:'white'}}>you have a strong longing to enhance your professional status and capabilities or to venture into a different field</Typography>
+        <Box className="text-box text-box-dark">
+          <Typography>
+            You have a strong longing to enhance your professional status and
+            capabilities or to venture into a different field.
+          </Typography>
         </Box>
-        <Box sx={{backgroundColor:'white', padding:'2%', margin:'2%', borderRadius:'20px', transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(1.09)'
-              },}}>
-            <Typography sx={{}}>You seek a program with guaranteed internship & job assistance with intensive but flexible hybrid learning options.</Typography>
+        <Box className="text-box">
+          <Typography>
+            You seek a program with guaranteed internship & job assistance with
+            intensive but flexible hybrid learning options.
+          </Typography>
         </Box>
-    </Box>
-    </Box>
+      </Box>
     </Box>
   );
 };
+
+export default EnrollToday;

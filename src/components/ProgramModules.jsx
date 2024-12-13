@@ -1,6 +1,7 @@
-import { Box } from '@mui/material'
-import React from 'react'
-import PMCard from './PMCard'
+import { Box } from '@mui/material';
+import React from 'react';
+import PMCard from './PMCard';
+import './ProgramModules.css';
 
 export const ProgramModules = () => {
     const data = [
@@ -70,21 +71,11 @@ export const ProgramModules = () => {
         },
       ];
       
-  return (
-    <Box sx={{
-        display: 'grid',
-        gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' },
-        gap:3,
-        placeItems: 'center',
-        backgroundImage: `url('program_modules.png')`,
-        backgroundSize: 'cover', // Ensures the image covers the entire area
-        backgroundPosition: 'center', // Centers the image
-        width: '100%', 
-
-      }}>
-         {data.map((data, index) => (
-        <PMCard key={index} data={data} />
-      ))}
-    </Box>
-  )
-}
+      return (
+        <Box className="program-modules">
+          {data.map((data, index) => (
+            <PMCard key={index} data={data} />
+          ))}
+        </Box>
+      );
+    };

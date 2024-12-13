@@ -98,49 +98,49 @@ const tabsData = [
     id: 'tc_finance',
     title: 'FEE FUNDING',
     intro:
-    'The "Fee Funding" section provides details about the various financial support options available, including scholarships, grants, and installment plans, ensuring that finances do not become a barrier to learning',
-  tools: [
-    {
-      backgroundImage: '13.png',
-      title: 'SCHOLARSHIP OPPORTUNITIES',
-      description: 'Merit-based financial aid to support high-achieving students.',
-    },
-    {
-      backgroundImage: '13.png',
-      title: 'INSTALLMENT PLANS',
-      description: 'Flexible payment options that allow students to pay the fee in manageable segments.',
-    },
-    {
-      backgroundImage: '13.png',
-      title: 'CORPORATE SPONSORSHIP',
-      description:
-        'Funding provided by partnering companies for eligible students, covering part or all of the program costs.',
-    },
-  ],
+      'The "Fee Funding" section provides details about the various financial support options available, including scholarships, grants, and installment plans, ensuring that finances do not become a barrier to learning',
+    tools: [
+      {
+        backgroundImage: '13.png',
+        title: 'SCHOLARSHIP OPPORTUNITIES',
+        description: 'Merit-based financial aid to support high-achieving students.',
+      },
+      {
+        backgroundImage: '13.png',
+        title: 'INSTALLMENT PLANS',
+        description: 'Flexible payment options that allow students to pay the fee in manageable segments.',
+      },
+      {
+        backgroundImage: '13.png',
+        title: 'CORPORATE SPONSORSHIP',
+        description:
+          'Funding provided by partnering companies for eligible students, covering part or all of the program costs.',
+      },
+    ],
   },
   {
     id: 'tc_innovation',
     title: 'INTERNSHIPS',
     intro:
-    "The 'Internship' segment emphasizes the real-world exposure students gain by working with industry professionals. It bridges the gap between theoretical knowledge and practical application, providing a platform to implement what they've learned in a professional environment",
-  tools: [
-    {
-      backgroundImage: '13.png',
-      title: 'INDUSTRY EXPOSURE',
-      description: 'Offers hands-on experience by engaging students in projects aligned with current industry needs.',
-    },
-    {
-      backgroundImage: '13.png',
-      title: 'PROFESSIONAL NETWORKING',
-      description: 'Opportunities to build connections with industry experts and potential employers.',
-    },
-    {
-      backgroundImage: '13.png',
-      title: 'SKILL ENHANCEMENT',
-      description:
-        'A chance to develop soft and hard skills that are crucial for career advancement.',
-    },
-  ],
+      "The 'Internship' segment emphasizes the real-world exposure students gain by working with industry professionals. It bridges the gap between theoretical knowledge and practical application, providing a platform to implement what they've learned in a professional environment",
+    tools: [
+      {
+        backgroundImage: '13.png',
+        title: 'INDUSTRY EXPOSURE',
+        description: 'Offers hands-on experience by engaging students in projects aligned with current industry needs.',
+      },
+      {
+        backgroundImage: '13.png',
+        title: 'PROFESSIONAL NETWORKING',
+        description: 'Opportunities to build connections with industry experts and potential employers.',
+      },
+      {
+        backgroundImage: '13.png',
+        title: 'SKILL ENHANCEMENT',
+        description:
+          'A chance to develop soft and hard skills that are crucial for career advancement.',
+      },
+    ],
   }
 ];
 
@@ -176,9 +176,9 @@ const TabComponent = () => {
       {selectedTab ? (
         <>
           <a href="/" className="btnclose">
-            <CloseSharpIcon/>
+            <CloseSharpIcon />
           </a>
-          <TabContentCard {...selectedTab}/>
+          <TabContentCard {...selectedTab} />
         </>
       ) : (
         <p></p>
