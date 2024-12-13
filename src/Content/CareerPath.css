@@ -1,0 +1,237 @@
+/* General Styles for Career Path Section */
+.career-path-container {
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  place-items: center;
+  width: 100%;
+}
+
+.career-path-title-container {
+  margin-top: 10%;
+  display: grid;
+  place-items: center;
+}
+
+.career-path-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px !important;
+  font-weight: bold;
+  justify-content: center !important;
+  margin-bottom: 5px !important;
+  /* margin-top: auto !important; */
+}
+
+.career-path-subtitle {
+  font-family: 'Manrope', sans-serif;
+  margin-top: 2%;
+  word-spacing: 4px;
+}
+
+.career-path-arrow {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: relative;
+  margin-left: 10px !important;
+  left: -auto !important;
+  color: #da3d33;
+  font-weight: bold;
+}
+
+.career-path-card-container {
+  display: flex;
+  align-items: end !important;
+  /* gap: 2%; */
+  padding: 4%;
+  /* margin-left: 10%; */
+  position: relative;
+}
+
+.career-path-card {
+  padding: 2%;
+  border-left: 4px solid black;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: #000;
+  transition: height 0.3s ease;
+}
+
+.career-path-card-number {
+  width: 50px;
+  height: 30px;
+  background-color: #da3d33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.career-path-card-image-container {
+  width: 100px;
+  height: 70px;
+  position: relative;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  background-color: #da3333;
+}
+
+.career-path-card-image-container img {
+  height: 50px;
+}
+
+.career-path-card-image-container::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 31px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 50px solid #da3d33;
+}
+
+.career-path-card-title {
+  font-size: 14px;
+}
+
+.career-path-card-description {
+  margin-top: 1%;
+  font-size: 12px;
+}
+
+.career-path-card-salary {
+  font-size: 14px;
+}
+
+.career-path-card-level {
+  font-size: 12px;
+}
+
+.career-path-footer {
+  width: 80%;
+  height: 80px;
+  background: linear-gradient(90deg, #f38787 0%, #da3d33 100%);
+  position: relative;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+}
+
+.career-path-footer::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  margin-top: -18px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #da3d33;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  .career-path-title-container {
+    justify-content: center;
+  }
+
+  .career-path-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .career-path-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .career-path-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 50px !important;
+  }
+
+  .career-path-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .career-path-footer {
+    font-size: 16px;
+    line-height: 80px;
+    width: 70%;
+  }
+
+  .career-path-arrow {
+    writing-mode: horizontal-tb;
+    transform: rotate(360deg);
+    position: relative;
+    color: #da3d33;
+    font-weight: bold;
+    margin-left: -50px !important;
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media (min-width: 601px) {
+  .career-path-card-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .career-path-card {
+    width: 30%;
+    /* Assuming you want three cards side by side; adjust as needed */
+    margin-bottom: 0;
+  }
+
+  .career-path-title {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .career-path-subtitle {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .career-path-footer {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .career-path-arrow {
+    left: auto;
+    /* Positioning can be dynamic or removed based on design */
+    top: auto;
+    font-size: 1.5rem;
+  }
+
+  .career-path-footer::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    margin-top: -18px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #da3d33;
+
+  }
+}

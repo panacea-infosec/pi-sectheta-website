@@ -1,0 +1,123 @@
+/* Footer Styles */
+.footer-container {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    /* padding: 16px; */
+    width: 100%;
+  }
+ 
+  
+  .footer-left {
+    border-right: 2px solid white;
+    width: 60%;
+    padding: 16px;
+  }
+  
+  .footer-left img {
+    padding-left: 18px;
+  }
+  
+  .footer-description {
+    padding: 32px;
+  }
+  
+  .footer-right {
+    padding-left: 48px;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-right img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-contact-info {
+    display: flex;
+    margin-top: 16px;
+  }
+  
+  .footer-contact-info .contact-detail {
+    margin-left: 12px;
+  }
+  
+  .footer-contact-info .contact-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .footer-contact-info .contact-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    margin-left: 12px;
+  }
+  
+  @media (max-width: 600px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .footer-right{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+      margin-top: -40px !important;
+      margin-bottom: 30px;
+    }
+  
+    .footer-left {
+      width: 100%;
+      border-right: none;
+      /* align-self: auto; */
+      margin-top: -10px;
+    }
+
+    .footer-logo{
+      margin-bottom: -20px;
+    }
+  
+    .footer-right {
+      padding-left: 0;
+      margin-top: 24px;
+    }
+  }
+
+  @media (min-width: 601px) {
+    .footer-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .footer-left {
+      width: 60%;
+      border-right: 1px solid #ccc; /* Add a dividing line for visual separation */
+      padding-right: 16px;
+    }
+  
+    .footer-right {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0 1.5rem;
+      /* margin: 2rem 15rem;  */
+      margin-right: 300px;
+      align-self: center;
+      /* margin-top: ;  */
+    }
+    
+  }
+  
+  

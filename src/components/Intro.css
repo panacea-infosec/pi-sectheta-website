@@ -1,0 +1,99 @@
+/* Intro Component Styles */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5%;
+    text-align: left;
+    /* width: 100%; */
+}
+
+@media (min-width: 601px) {
+    .intro-container {
+        width: 75%;
+    }
+
+    .intro-title {
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        line-height: 1.4;
+        font-family: 'Oswald', sans-serif !important;
+        text-align: left;
+    }
+}
+
+/* Title Styling */
+.intro-title {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    line-height: 1.4;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .intro-container {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: -15px;
+    }
+
+    .intro-title {
+        font-size: 28px !important;
+        margin-top: -140px !important;
+    }
+
+    .intro-description {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .intro-list {
+        margin-left: 15px !important;
+    }
+
+    .intro-button {
+        padding: 12px 24px;
+    }
+}
+
+@media (min-width: 601px) {
+    .intro-title {
+        font-size: 68px;
+        /* font-weight: bold !important; */
+    }
+}
+
+/* Description Styling */
+.intro-description {
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    word-spacing: 2px;
+    line-height: 20px;
+    margin-top: 2%;
+}
+
+
+/* List Styling */
+.intro-list {
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 2%;
+}
+
+.intro-list ul {
+    margin-left: 20px;
+}
+
+.intro-list li {
+    margin-bottom: 8px;
+}
+
+/* Button Styling */
+.intro-button {
+    border-radius: 50px;
+    margin-top: 5%;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+
+}

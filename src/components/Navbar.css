@@ -1,0 +1,129 @@
+/* General styling */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Ensure space between elements */
+  align-items: center;
+  /* Align items vertically */
+}
+
+.app-bar {
+  background-color: white;
+  color: #252525;
+  box-shadow: none;
+}
+
+/* Menu button (hamburger) for mobile */
+.menu-button {
+  margin-right: 16px;
+  display: none;
+  /* Hidden by default, visible on smaller screens */
+  color: #252525;
+}
+
+/* Responsive logo box */
+.logo-box {
+  flex-grow: 1;
+  display: none;
+  /* Hidden by default */
+}
+
+.logo-box img {
+  height: 80px;
+}
+
+.nav-items {
+  display: flex;
+  /* width: 500px; */
+  gap: 20px;
+}
+
+.nav-button {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+/* Drawer styles (for mobile) */
+.drawer {
+  text-align: center;
+  background-color: white;
+}
+
+.drawer-logo img {
+  height: 80px;
+}
+
+.drawer-item {
+  text-align: center;
+  padding: 16px 24px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.drawer-text {
+  font-size: 16px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Ensure space between elements */
+    align-items: center;
+    /* Align items vertically */
+  }
+
+  /* Display the hamburger menu and hide nav items */
+  .menu-button {
+    display: block;
+  }
+
+  /* Show the logo box */
+  .logo-box {
+    display: flex;
+    /* background-color: white; */
+  }
+
+  /* Hide nav items for small screens */
+  .nav-items {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+
+
+  .nav-items {
+    /* display: flex; */
+    color: white;
+    /* background-color: ; */
+  }
+
+  /* Hide hamburger menu on large screens */
+  .menu-button {
+    display: none;
+  }
+
+  .logo-box {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .logo-box img {
+    height: 80px;
+  }
+
+  /* Display nav items on larger screens */
+  /* .nav-items {
+    display: flex; 
+  } */
+}

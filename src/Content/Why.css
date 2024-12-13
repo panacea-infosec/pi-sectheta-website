@@ -1,0 +1,165 @@
+/* Global box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the Why Section */
+.why-container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    padding: 0 16px;
+    margin-top: 70px;
+    margin-bottom: -70px;
+}
+
+/* Heading Styling */
+.why-heading {
+    color: #2c2c2c;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    width: 100%;
+    font-size: 24px;
+}
+
+/* Grid for Cards */
+.why-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 30px;
+    justify-items: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+/* Card Styling */
+.why-card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 1rem;
+    margin: 1%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    justify-content: space-between; /* Ensures space between image and text */
+    align-items: center; /* Vertically centers the content */
+}
+
+/* Hover Effect */
+.why-card:hover {
+    transform: scale(1.07);
+    box-shadow: -9px -9px 18px #f2f2f2, 9px 9px 18px #f2f2f2;
+}
+
+/* Image Styling */
+.why-card-image-box {
+    width: 50%;
+    padding: 1%;
+}
+
+.why-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.why-card-content {
+    display: grid;
+    place-items: left;
+}
+
+/* Card Title */
+.why-card-title {
+    color: #DA3D33;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Card Description */
+.why-card-description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+}
+
+/* Media Query for small screens (600px and below) */
+@media screen and (max-width: 600px) {
+.why-container{
+    margin-top: 35px;
+}
+
+    .why-heading {
+        font-size: 25px !important;
+        margin-bottom: 22px;
+    }
+
+    .why-cards {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .why-card {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        max-width: 100%;
+        padding: 8px;
+        margin: -5px;
+    }
+
+    .why-card-image-box {
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .why-card-image {
+        width: 30% !important; /* Ensures a good image size */
+    }
+
+    .why-card-content {
+        width: 70%;
+    }
+}
+
+/* Media Query for very small screens (480px and below) */
+@media screen and (max-width: 480px) {
+    .why-card {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 16px;
+    }
+
+    .why-card-image {
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .why-card-content {
+        width: 100%;
+    }
+
+    .why-card-title {
+        font-size: 16px;
+    }
+
+    .why-card-description {
+        font-size: 12px;
+    }
+}
