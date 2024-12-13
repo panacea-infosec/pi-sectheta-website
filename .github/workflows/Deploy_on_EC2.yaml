@@ -25,7 +25,8 @@ jobs:
             cd /home/ubuntu/pi-sectheta-website
             git pull https://github.com/panacea-infosec/pi-sectheta-website
             npm install
-            npm run build
+            cd /home/ubuntu
+            ./restart.sh
             sudo systemctl reload nginx 
           EOF
     
