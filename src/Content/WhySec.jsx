@@ -47,7 +47,7 @@ export const WhySec = () => {
             textAlign: "center",
             lineHeight:1.4,
             marginY:'8%',
-            width:'100%'
+            width:'100%',
           }}
         >
          Why Choose Sectheta?

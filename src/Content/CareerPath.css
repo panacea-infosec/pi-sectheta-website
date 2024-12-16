@@ -37,6 +37,7 @@
   left: -auto !important;
   color: #da3d33;
   font-weight: bold;
+
 }
 
 .career-path-card-container {
@@ -168,18 +169,22 @@
   }
 
   .career-path-footer {
+    display: none;
     font-size: 16px;
     line-height: 80px;
     width: 70%;
   }
 
   .career-path-arrow {
+    display: flex;
+    justify-content: center;
     writing-mode: horizontal-tb;
     transform: rotate(360deg);
     position: relative;
     color: #da3d33;
-    font-weight: bold;
-    margin-left: -50px !important;
+    font-weight: 500 !important;
+    font-size: larger !important;
+    /* margin-left: -50px !important; */
     width: 100%;
     text-align: center;
 

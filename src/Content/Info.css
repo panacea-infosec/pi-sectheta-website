@@ -2,7 +2,7 @@
 .info-container {
     margin-top: 5%;
     background-color: #f6f6f6;
-    padding: 2% 0;
+    padding: 5% 0;
     font-family: 'Manrope', sans-serif;
     text-align: center;
   }
@@ -73,6 +73,9 @@
   
   /* Media Queries for Responsive Layout */
   @media (min-width: 600px) {
+    .info-container{
+      
+    }
     .info-card {
       width: 30%;
     }

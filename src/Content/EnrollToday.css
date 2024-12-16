@@ -111,6 +111,12 @@
     width: 100%;
   }
 
+  .enroll-title,
+  .enroll-subtitle {
+    width: 100%;
+    padding: 4% 4%;
+  }
+
   .card-container {
     display: flex;
     flex-direction: column;
@@ -131,5 +137,15 @@
 
   .card-image{
     width: 100%;
+  }
+
+  .text-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    margin: 0 0 1rem 0;
   }
 }

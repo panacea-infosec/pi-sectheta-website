@@ -116,12 +116,14 @@
         flex-direction: column;
         width: 100%;
         padding: 0.2rem ;
+        margin: 15px 0;
+        padding: 15px 15px;
         
     }
     .faq-title {
       font-size: 24px;
       margin-top: 5%;
-      margin-bottom: 5%;
+      margin-bottom: 5% !important;
       justify-content: center;
     }
   

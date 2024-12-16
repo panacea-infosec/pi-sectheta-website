@@ -1,8 +1,8 @@
 /* General styling */
 .navbar {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
   /* Ensure space between elements */
   align-items: center;
   /* Align items vertically */
@@ -12,6 +12,10 @@
   background-color: white;
   color: #252525;
   box-shadow: none;
+}
+.toolbar{
+  height: auto;
+
 }
 
 /* Menu button (hamburger) for mobile */
@@ -67,6 +71,8 @@
 /* Responsiveness */
 @media (max-width: 600px) {
 
+
+
   .toolbar {
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +85,7 @@
     justify-content: space-between;
     /* Ensure space between elements */
     align-items: center;
+
     /* Align items vertically */
   }
 
@@ -90,6 +97,7 @@
   /* Show the logo box */
   .logo-box {
     display: flex;
+    flex-wrap: wrap;
     /* background-color: white; */
   }
 

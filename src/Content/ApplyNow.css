@@ -26,7 +26,7 @@
 .apply-now-list {
   color: white;
   font-family: "Manrope", sans-serif;
-  line-height: 2rem;
+  /* line-height: 2rem; */
   word-spacing: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -70,13 +70,15 @@
   .apply-now-title {
     font-size: 1.3rem !important;
     padding: 0 16px;
-    margin: 15px 15px 15px 0px !important;
+    margin: 20px 15px 15px 0px !important;
   }
 
   .apply-now-list {
     font-size: 1rem;
-    padding: 0 16px;
-    margin: 15px 18px 15px 0px !important;
+    padding: 0 35px 15px 15px;
+    margin: 20px 15px 15px 0px !important;
+    /* margin: 10px !important; */
+    text-align: left;
   }
 
   .apply-now-image {

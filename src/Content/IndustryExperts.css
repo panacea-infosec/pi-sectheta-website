@@ -155,7 +155,8 @@
   }
 
   .section-title {
-    font-size: 24px; /* Smaller title for mobile */
+    font-size: 20px !important; /* Smaller title for mobile */
+    font-weight: 600 !important;
   }
 
   .highlight-text {
