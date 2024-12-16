@@ -24,7 +24,7 @@ jobs:
             set -e                                          
             cd /home/ubuntu/pi-sectheta-website
             git branch
-            git pull origin
+            git pull origin responsive
             git checkout responsive
             npm install
             cd /home/ubuntu
