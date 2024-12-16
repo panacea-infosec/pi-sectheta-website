@@ -191,6 +191,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    width: 90% ;
   }
 
   .career-path-card {
@@ -215,10 +216,8 @@
   }
 
   .career-path-arrow {
-    left: auto;
-    /* Positioning can be dynamic or removed based on design */
-    top: auto;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
   }
 
   .career-path-footer::after {

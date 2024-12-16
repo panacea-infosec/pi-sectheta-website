@@ -62,17 +62,21 @@
     /* max-width: 600px; */
     width: 100%;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
+    color: white;
+    align-content: center !important;
 }
 
 .mentor-name {
     font-weight: bold;
     margin-bottom: 10px;
+    color: white;
 }
 
 .mentor-position {
     font-size: 20px;
     margin-bottom: 20px;
+    color: white;
 }
 
 /* Right Circular Image */

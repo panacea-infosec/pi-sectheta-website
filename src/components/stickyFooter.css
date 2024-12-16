@@ -85,6 +85,7 @@
   .footer-text {
     font-size: 1rem;
     display: flex;
+    /* margin-left: 2rem; */
     /* Adjust text size */
   }
 

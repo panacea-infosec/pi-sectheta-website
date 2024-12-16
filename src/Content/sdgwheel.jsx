@@ -27,7 +27,7 @@ export const Sdgwheel = () => {
       <div
         className="az-element az-row row animated fadeInUp"
         
-        style={{ paddingLeft: '0px', paddingRight: '0px', animationDuration: '2500ms' }}
+        style={{ paddingLeft: '0px', paddingRight: '0px', animationDuration: '2500ms', width: "100%"}}
         data-az-id="b35"
         data-azb="az_row"
         data-azat-device="sm"
@@ -42,7 +42,7 @@ export const Sdgwheel = () => {
       >
         <div
           className="az-element az-ctnr az-column col-sm-12"
-          style={{}}
+          style={{ }}
           data-az-id="b36"
           data-azb="az_column"
           data-azat-width="1"

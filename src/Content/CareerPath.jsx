@@ -73,7 +73,7 @@ export const CareerPath = () => {
             className="career-path-card"
             sx={{
               height: `${baseHeight + index * heightIncrement}px`,
-              opacity: `${baseOpacity + index * opacityIncrement}%`,
+              // opacity: `${baseOpacity + index * opacityIncrement}%`,
             }}
           >
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'left', gap: 1 }}>

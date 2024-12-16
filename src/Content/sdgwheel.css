@@ -1,50 +1,59 @@
-
 .mt-3 {
     margin: 60px auto 20px auto;
     margin: 1 auto 1.25rem auto;
     position: relative
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 {
-        height:380px;
+        height: 380px;
         height: 23.75rem;
         overflow: hidden;
     }
 }
 
-@media only screen and (max-width: 575.98px) {
-    .mt-3.m_nextgen,.mt-3.m_nextgen .open_miniwheel {
-        height:2900px
+@media only screen and (max-width: 600px) {
+
+    .mt-3.m_nextgen,
+    .mt-3.m_nextgen .open_miniwheel {
+        height: 2900px
     }
 }
 
-@media only screen and (max-width: 575.98px) {
-    .mt-3.m_data,.mt-3.m_data .open_miniwheel {
-        height:1790px
+@media only screen and (max-width: 600px) {
+
+    .mt-3.m_data,
+    .mt-3.m_data .open_miniwheel {
+        height: 1790px
     }
 }
 
-@media only screen and (max-width: 575.98px) {
-    .mt-3.m_finance,.mt-3.m_finance .open_miniwheel {
-        height:2130px
+@media only screen and (max-width: 600px) {
+
+    .mt-3.m_finance,
+    .mt-3.m_finance .open_miniwheel {
+        height: 2130px
     }
 }
 
-@media only screen and (max-width: 575.98px) {
-    .mt-3.m_innovation,.mt-3.m_innovation .open_miniwheel {
-        height:1855px
+@media only screen and (max-width: 600px) {
+
+    .mt-3.m_innovation,
+    .mt-3.m_innovation .open_miniwheel {
+        height: 1855px
     }
 }
 
-.mt-3 .wheel-closed-wrapper,.mt-3 .wheel-open-wrapper {
+.mt-3 .wheel-closed-wrapper,
+.mt-3 .wheel-open-wrapper {
     position: relative;
     width: 100%;
     left: 0;
     top: 0
 }
 
-.mt-3 .wheel-closed-wrapper.close_bigwheel,.mt-3 .wheel-open-wrapper {
+.mt-3 .wheel-closed-wrapper.close_bigwheel,
+.mt-3 .wheel-open-wrapper {
     opacity: 0;
     z-index: 0
 }
@@ -55,9 +64,9 @@
     transition: all 1s ease-in
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .wheel-open-wrapper {
-        margin:0
+        margin: 0
     }
 }
 
@@ -71,7 +80,8 @@
     height: 0
 }
 
-.mt-3 .wheel-closed-wrapper,.mt-3 .wheel-open-wrapper.open_miniwheel {
+.mt-3 .wheel-closed-wrapper,
+.mt-3 .wheel-open-wrapper.open_miniwheel {
     opacity: 1;
     z-index: 1;
     -webkit-transition: all 0.5s ease;
@@ -79,9 +89,9 @@
     transition: all 0.5s ease
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .wheel-open-wrapper.open_miniwheel {
-        padding-bottom:30px;
+        padding-bottom: 30px;
         padding-bottom: 1.875rem;
         background: #11181a
     }
@@ -101,9 +111,18 @@
     position: relative
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
+    .wheel-c-top{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid black; */
+        padding-left: 1.5rem;
+    }
+
     .mt-3 .row.wheel-open-wrapper>div {
-        margin:0 0px
+        margin: 0 0px
     }
 }
 
@@ -117,9 +136,9 @@
     text-align: center
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 ul.big-wheel-m {
-        transform:scale(0.502);
+        transform: scale(0.502);
         transform-origin: 3px 0
     }
 }
@@ -176,13 +195,15 @@
     display: block
 }
 
-.mt-3 ul.big-wheel-m li a .bw-tab,.mt-3 ul.big-wheel-m li a #icon_shape {
+.mt-3 ul.big-wheel-m li a .bw-tab,
+.mt-3 ul.big-wheel-m li a #icon_shape {
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease
 }
 
-.mt-3 ul.big-wheel-m li a:hover .bw-tab,.mt-3 ul.big-wheel-m li a:hover #icon_shape {
+.mt-3 ul.big-wheel-m li a:hover .bw-tab,
+.mt-3 ul.big-wheel-m li a:hover #icon_shape {
     opacity: 1;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -200,9 +221,9 @@
     transition: all 0.5s ease
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .wheel-m {
-        display:-webkit-box;
+        display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -227,9 +248,9 @@
     display: block
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .wheel-m>li {
-        position:relative;
+        position: relative;
         top: 0;
         left: 0;
         width: 100px;
@@ -241,9 +262,9 @@
     display: block
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .wheel-m a {
-        position:relative;
+        position: relative;
         height: 100px
     }
 }
@@ -254,9 +275,9 @@
     top: 0%
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .wheelbase_bg {
-        display:none !important
+        display: none !important
     }
 }
 
@@ -266,9 +287,9 @@
     top: 36.6%
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .sdgwheel {
-        display:none !important
+        display: none !important
     }
 }
 
@@ -303,13 +324,17 @@
     transition: all 0.5s ease
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .wheel-m a path.tab-sec {
-        opacity:0
+        opacity: 0
     }
 }
 
-.mt-3 .s_nextgen .nextgen a path.tab-sec,.mt-3 .s_finance .finance a path.tab-sec,.mt-3 .s_innovation .innovation a path.tab-sec,.mt-3 .s_data .data a path.tab-sec,.mt-3 .wheel-m a:hover path.tab-sec {
+.mt-3 .s_nextgen .nextgen a path.tab-sec,
+.mt-3 .s_finance .finance a path.tab-sec,
+.mt-3 .s_innovation .innovation a path.tab-sec,
+.mt-3 .s_data .data a path.tab-sec,
+.mt-3 .wheel-m a:hover path.tab-sec {
     opacity: 1;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -333,9 +358,9 @@
     transition: all 0.5s ease
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .wheel-m a svg {
-        position:absolute;
+        position: absolute;
         top: 0;
         left: 0
     }
@@ -354,9 +379,9 @@
     transform-origin: 0px 150px
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .s_nextgen .nextgen a svg {
-        left:-42px;
+        left: -42px;
         top: 8px
     }
 }
@@ -374,9 +399,9 @@
     transform-origin: 220px 4px
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .s_finance .finance a svg {
-        left:-78px;
+        left: -78px;
         top: -46px
     }
 }
@@ -390,9 +415,9 @@
     transform-origin: 150px 180px
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .s_innovation .innovation a svg {
-        left:1px;
+        left: 1px;
         top: -73px
     }
 }
@@ -406,9 +431,9 @@
     transform-origin: 0px 30px
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .s_data .data a svg {
-        left:-48px;
+        left: -48px;
         top: -21px
     }
 }
@@ -451,9 +476,9 @@
     transition: all 0.5s ease
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 ul.wheel-m g#icon {
-        -moz-transform:rotate(0deg) scale(0.9) !important;
+        -moz-transform: rotate(0deg) scale(0.9) !important;
         -o-transform: rotate(0deg) scale(0.9) !important;
         -ms-transform: rotate(0deg) scale(0.9) !important;
         -webkit-transform: rotate(0deg) scale(0.9) !important;
@@ -466,7 +491,10 @@
     opacity: 1
 }
 
-.mt-3 .s_nextgen .nextgen a g#icon,.mt-3 .s_finance .finance a g#icon,.mt-3 .s_innovation .innovation a g#icon,.mt-3 .s_data .data a g#icon {
+.mt-3 .s_nextgen .nextgen a g#icon,
+.mt-3 .s_finance .finance a g#icon,
+.mt-3 .s_innovation .innovation a g#icon,
+.mt-3 .s_data .data a g#icon {
     opacity: 1
 }
 
@@ -504,32 +532,32 @@
     transform-origin: 37% 64%
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .nextgen a svg {
-        left:-35px;
+        left: -35px;
         background: #c71f1f
     }
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .data a svg {
-        background:#0b966d;
+        background: #0b966d;
         left: -45px;
         top: -19px
     }
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .finance a svg {
-        background:#e4b626;
+        background: #e4b626;
         left: -84px;
         top: -37px
     }
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .innovation a svg {
-        background:#00559e;
+        background: #00559e;
         left: -7px;
         top: -76px
     }
@@ -548,16 +576,16 @@
     padding-bottom: 3.75rem
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .tab-content {
-        width:100%;
+        width: 100%;
         left: 0;
         border-radius: 0
     }
 }
 
 .mt-3 .tab-content h1 {
-    font-family: 'proxima_novabold',Arial,Helvetica,sans-serif;
+    font-family: 'proxima_novabold', Arial, Helvetica, sans-serif;
     padding: 45px 30px 31px 20px;
     padding: 2.8125rem 1.875rem 1.9375rem 1.25rem;
     font-size: 25px;
@@ -598,7 +626,7 @@
     background: #0569B1
 }
 
-.mt-3 .tab-content .items-section  {
+.mt-3 .tab-content .items-section {
     margin-bottom: 70px;
     margin-bottom: 4.375rem
 }
@@ -613,7 +641,7 @@
     right: 0;
     z-index: 2;
     color: #242F35;
-    padding:2px;
+    padding: 2px;
     margin-right: 20px;
     text-decoration: none
 }
@@ -644,7 +672,7 @@
     width: 330%;
     position: absolute;
     background: #11181A;
-    background: linear-gradient(55deg,rgba(17,24,26,0) 19%,#11181A 30%);
+    background: linear-gradient(55deg, rgba(17, 24, 26, 0) 19%, #11181A 30%);
     animation-name: fade-mask;
     animation-duration: 1.5s;
     right: 0;
@@ -691,9 +719,9 @@
     z-index: 1
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .m-wheel-wrapper {
-        position:relative
+        position: relative
     }
 }
 
@@ -754,9 +782,9 @@
     overflow: hidden
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
     .mt-3 .open_miniwheel .tab-content {
-        overflow:visible;
+        overflow: visible;
         height: 100%;
         height: fit-content
     }
