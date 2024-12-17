@@ -34,8 +34,8 @@ function Home() {
       >
         <Box
           sx={{
-            display:'grid',
-            placeItems:'center',
+            display: 'grid',
+            placeItems: 'center',
             width: { xs: "100%", md: "50%" }, // Full width on small screens, 50% on medium and larger
             padding: 2, // Optional padding to create spacing between elements
           }}
@@ -45,8 +45,8 @@ function Home() {
 
         <Box
           sx={{
-            display:'grid',
-            placeItems:'center',
+            display: 'grid',
+            placeItems: 'center',
             width: { xs: "100%", md: "50%" }, // Full width on small screens, 50% on medium and larger
             padding: 2, // Optional padding
           }}
@@ -54,25 +54,25 @@ function Home() {
           <LiveDemo />
         </Box>
       </Box>
-      <Box sx={{mt:'5%'}}>
-      <CourseDetails/>
+      <Box sx={{ mt: '5%' }}>
+        <CourseDetails />
       </Box>
-      <EnrollToday/>
-      <Why/>
-      <CareerPath/>
-      <WhySec/>
-      <PanaceaLegacy/>
-      <ProgramDetails/>
-      <Box sx={{marginTop:'4%'}}>
-      <Sdgwheel />
+      <EnrollToday />
+      <Why />
+      <CareerPath />
+      <WhySec />
+      <PanaceaLegacy />
+      <ProgramDetails />
+      <Box sx={{ marginTop: '4%' }}>
+        <Sdgwheel />
       </Box>
-      <ApplyNow/>
-      <IndustryExperts/>
-      <MentorSpeak/>
-      <Reviews/>
+      <ApplyNow />
+      <IndustryExperts />
+      <MentorSpeak />
+      <Reviews />
       <Info />
-      <Faq/>
-      <Footer/>
+      <Faq />
+      <Footer />
 
     </div>
   );

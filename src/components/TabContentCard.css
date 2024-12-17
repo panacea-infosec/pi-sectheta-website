@@ -1,9 +1,103 @@
-
 /* Container for the hexagon shape */
 .hexagon {
+  position: relative;
+  width: 300px;
+  /* Adjust the width as per your design */
+  height: 346px;
+  /* Adjust height to maintain the hexagonal ratio */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.hexagon h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hexagon p {
+  margin-top: -14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.hexagon:hover h4 {
+  color: #00cda2;
+}
+
+
+.hexagon h4::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1.5px;
+  background-color: #00cda2;
+  margin: 10px auto 0;
+  opacity: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hexagon:hover h4::after {
+  width: 140px;
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.detailExpand {
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+}
+
+.detailExpand:hover {
+  transform: translateY(-10px);
+  z-index: 100;
+
+}
+
+.detailExpand::before {
+  content: "";
+  position: absolute;
+  top: 40;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: rgba(0, 0, 0);
+  /* Set the desired background color */
+  transition: transform 0.3s ease-in-out;
+  /* transform: scaleY(1.0); Initial scale */
+  z-index: -1;
+  /* Place it behind the main content */
+}
+
+.detailExpand:hover::before {
+  transform: scaleY(1.02);
+  /* Scale the background only vertically */
+  z-index: -1;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hexagon {
     position: relative;
-    width: 300px; /* Adjust the width as per your design */
-    height: 346px; /* Adjust height to maintain the hexagonal ratio */
+    width: 300px;
+    height: 346px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
     flex-direction: column;
@@ -12,74 +106,28 @@
     border: 2px solid black;
     text-align: center;
   }
- .hexagon h2 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color:white;
-  }
-  
-  .hexagon p {
-    margin-top: -14px;
-    font-size: 14px;
-    line-height: 1.5;
+
+  /* .item-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -50px;
+  } */
+
+  .hexagon-container {
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+
+    /* margin-bottom: -50px !important; */
   }
 
-  
-  .hexagon:hover h4 {
-    color: #00cda2; 
+  .tab-content {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    /* margin-bottom: 500px !important; */
+    margin-bottom: 60vh !important;
+    overflow: visible !important;
   }
-  
-
-  .hexagon h4::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 1.5px;
-    background-color: #00cda2;
-    margin: 10px auto 0;
-    opacity: 1;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .hexagon:hover h4::after {
-    width: 140px;
-    opacity: 1; 
-    transform: scale(1.01);
-  }
-
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 2px;
-    align-items: center;
-    justify-content: center;
-  }
-
-.detailExpand{
-  transition: transform 0.3s ease-in-out;
 }
-  .detailExpand:hover{
-    transform: translateY(-10px);
-    z-index:100;
-    
-  }
-
-  .detailExpand::before {
-    content: "";
-    position: absolute;
-    top: 40;
-    left: 0;
-    width: 100%;
-    height: 60%;
-    background: rgba(0, 0, 0); /* Set the desired background color */
-    transition: transform 0.3s ease-in-out;
-    /* transform: scaleY(1.0); Initial scale */
-    z-index: -1; /* Place it behind the main content */
-  }
-  
-  .detailExpand:hover::before {
-    transform: scaleY(1.02); /* Scale the background only vertically */
-    z-index: -1;
-  }

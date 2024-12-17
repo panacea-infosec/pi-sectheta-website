@@ -22,8 +22,10 @@ export const TabContentCard = (props) => {
           </div>
           <div className="items-section" >
             <h1>Tools and resources</h1>
-            <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', alignItems:'center', justifyItems:'center'
+            <div className='hexagon-container' style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', alignItems:'center', justifyItems:'center'
             }}>
+            {/* <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', alignItems:'center', justifyItems:'center'
+            }}> */}
               {props.tools.map((tool, index) => (
                 <HexagonGridItem key={index} {...tool} />
               ))}

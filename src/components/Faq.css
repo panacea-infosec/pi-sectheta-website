@@ -13,7 +13,7 @@
     font-weight: 800;
     text-align: center;
     line-height: 1.4;
-    margin-top: 4%;
+    margin-top: 5%;
     margin-bottom: 4%;
     width: 100%;
   }
@@ -152,4 +152,10 @@
       height: 20px;
     }
   }
+}
+
+@media (min-width:601px){
+   .faq-title{
+    margin: 2% !important;
+    }
 }

@@ -35,6 +35,31 @@
     margin: 0 auto
 }
 
+@media only screen and (max-width: 600px) {
+    .items-section .hexa-grid{
+        display: flex ;
+        flex-direction: column;
+}
+/* .clear{
+    display: flex;
+    flex-direction: column;
+} */
 
+/* .tab-content{
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    margin-bottom: 500px !important;
+    overflow: visible!important;
+} */
+
+.items-section .hexa-grid .clear{
+    display: flex;
+    flex-direction: column;
+  }
+
+  div{
+    background-color: turquoise;
+  }
   
- 
+}

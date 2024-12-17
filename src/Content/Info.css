@@ -2,7 +2,8 @@
 .info-container {
     margin-top: 5%;
     background-color: #f6f6f6;
-    padding: 5% 0;
+    padding: 40px 15px 60px 15px ;
+    /* padding: 5% 0; */
     font-family: 'Manrope', sans-serif;
     text-align: center;
   }
@@ -23,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
-    margin-top: 5%;
+    margin-top: 3%;
   }
   
   /* Info Card Styling */

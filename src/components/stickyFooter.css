@@ -7,8 +7,10 @@
 
 .footer-container {
   display: flex;
+  flex-direction: row !important;
   width: 100%;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
+  /* background-color: ; */
   /* margin: 0 auto; */
 
 }
@@ -64,7 +66,7 @@
   .footer-container {
     display: flex;
     flex-direction: row;
-    padding:  0 0.5rem 0 0.5rem ;
+    padding:  0 2rem 0 2rem ;
     /* justify-content: space-evenly; */
   }
 
@@ -85,6 +87,7 @@
   .footer-text {
     font-size: 1rem;
     display: flex;
+    margin: 0.5rem;
     /* margin-left: 2rem; */
     /* Adjust text size */
   }

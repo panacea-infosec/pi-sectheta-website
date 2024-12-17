@@ -72,8 +72,8 @@ export const CareerPath = () => {
             key={stage.id}
             className="career-path-card"
             sx={{
-              height: `${baseHeight + index * heightIncrement}px`,
-              // opacity: `${baseOpacity + index * opacityIncrement}%`,
+              height: {md:`${baseHeight + index * heightIncrement}px`, xs: `${baseHeight}px` },
+              opacity: {md:`${baseOpacity + index * opacityIncrement}%`, xs: `${baseOpacity}px` },
             }}
           >
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'left', gap: 1 }}>
