@@ -30,11 +30,10 @@
 }
 
 .card-container {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
 }
 
 .card-box {
@@ -42,7 +41,7 @@
   flex-direction: row;
   border-radius: 5px;
   margin: 16px;
-  width: 485px;
+  width: 400px;
   height: 135px;
   background-color: white;
   transition: transform 0.3s ease-in-out;
@@ -73,15 +72,16 @@
   border-radius: 20px;
 }
 
-.text-box {
+.c-text-box {
   background-color: white;
   padding: 2%;
   margin: 2%;
+  height: 80px;
   border-radius: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
-.text-box:hover {
+.c-text-box:hover {
   transform: scale(1.09);
 }
 
@@ -95,10 +95,11 @@
     flex-direction: row;
     /* Make the card container row-wise on larger screens */
     justify-content: space-evenly;
+    flex-wrap:wrap;
   }
 
   .card-box {
-    width: 30%;
+    /* width: 30%; */
     /* Set width for cards to be smaller and fit side by side */
   }
 }
@@ -136,10 +137,10 @@
   }
 
   .card-image{
-    width: 100%;
+    width: 70%;
   }
 
-  .text-box{
+  .c-text-box{
     width: 100%;
     display: flex;
     flex-direction: column;

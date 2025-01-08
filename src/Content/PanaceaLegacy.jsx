@@ -17,7 +17,7 @@ export const PanaceaLegacy = () => {
         Panacea’s Legacy?
       </Typography>
       <Typography variant="body1" className="panacea-legacy-description">
-        Panacea Infosec is a QSA company and leading provider of PCI DSS, CERT-In, ISO, GDPR, HIPAA, SOC compliance services, serving clients on all aspects of Information Security Governance, Risk Management and Compliance Management.
+      Panacea Infosec is a QSA company and leading provider of PCI DSS, CERT-In, ISO, GDPR, HIPAA, and SOC compliance services, serving clients on all aspects of Information Security Governance, Risk Management, and Compliance Management.
       </Typography>
       <Box className="stats-container">
         {stats.map((stat, index) => (

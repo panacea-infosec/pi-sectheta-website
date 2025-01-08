@@ -3,15 +3,17 @@
   padding: 0 ;
   text-align: center;
   background-color: #f5f5f5;
+  
 }
 
-.footer-container {
+.header-container {
+  background-color: black;
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row;
+  color: white;
   width: 100%;
-  justify-content: space-evenly;
-  /* background-color: ; */
-  /* margin: 0 auto; */
+  justify-content: center;
+  align-content: center;
 
 }
 
@@ -26,34 +28,28 @@
   color: #da3d33;
   display: flex;
   font-size: 36px;
-  /* Adjust for balance */
 }
 
 .footer-text {
   font-size: 1.25rem;
-  /* Slightly larger text */
   font-family: 'Roboto', sans-serif;
-  /* Ensure consistent font */
 }
 
 .footer-button {
-  margin-top: 16px;
-  padding: 8px 24px;
+  margin-top: 14px;
+  padding: 8px;
   border-radius: 50px;
   background-color: #df3939de;
-  /* Primary button color */
   color: white;
   font-size: 1rem;
   font-weight: bold;
   border: none;
   cursor: pointer;
   text-transform: none;
-  /* Keep original casing */
 }
 
 .footer-button:hover {
   background-color: #9f1515;
-  /* Darker shade on hover */
 }
 
 /* Responsive styling */
@@ -63,7 +59,7 @@
     display: flex;
   }
 
-  .footer-container {
+  .header-container{
     display: flex;
     flex-direction: row;
     padding:  0 2rem 0 2rem ;
@@ -73,8 +69,8 @@
   .footer-content {
     display: flex;
     justify-content: center;
-    margin-left: 25%;
-    margin-top: 15px;
+    /* margin-left: 25%; */
+    /* margin-top: 15px; */
 
   }
 
@@ -96,13 +92,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    margin-right: 550px;
+    /* margin-right: 550px; */
     margin-bottom: 20px;
-
-    /* padding: 10px 20px; */
-    /* Adjust button padding */
     font-size: 0.9rem;
-    /* Adjust button font size */
   }
 }
 
@@ -113,7 +105,7 @@
     /* Adjust padding for very small screens */
   }
 
-  .footer-container {
+  .header-container {
     display: flex;
     width: 100%;
 
@@ -137,7 +129,6 @@
   }
 
   .footer-button {
-    padding: 10px 10px 10px 10px;
     font-size: 0.8rem;
     /* Smaller button font size */
   }

@@ -50,6 +50,7 @@ const tabsData = [
   {
     id: 'tc_nextgen',
     title: 'PROGRAM MODULES',
+    link: 'Picture8.png',
     intro:
       " The 'Program Modules'section outlines the core components of the course curriculum, breaking down the learning journey into various focused topics and skill sets. Each module is designed to progressively build students' knowledge and expertise, ensuring a thorough understanding of both fundamental and advanced concepts.",
     tools: [
@@ -73,6 +74,7 @@ const tabsData = [
   {
     id: 'tc_data',
     title: 'PROGRAM JOURNEY',
+    link: 'Picture7.png',
     intro:
       'The "Program Journey" maps out the educational path that a student will undertake, from enrollment to graduation. It highlights key milestones, learning outcomes, and progression stages that ensure students are equipped for success by the end of the program.',
     tools: [
@@ -96,9 +98,9 @@ const tabsData = [
   },
   {
     id: 'tc_finance',
-    title: 'FEE FUNDING',
+    title: 'PROGRAM FEES',
     intro:
-      'The "Fee Funding" section provides details about the various financial support options available, including scholarships, grants, and installment plans, ensuring that finances do not become a barrier to learning',
+      'Sign up for the program above, and we’ll provide you with the fee details shortly.',
     tools: [
       {
         backgroundImage: '13.png',
@@ -120,9 +122,9 @@ const tabsData = [
   },
   {
     id: 'tc_innovation',
-    title: 'INTERNSHIPS',
+    title: 'ON-THE-JOB TRAINING',
     intro:
-      "The 'Internship' segment emphasizes the real-world exposure students gain by working with industry professionals. It bridges the gap between theoretical knowledge and practical application, providing a platform to implement what they've learned in a professional environment",
+      "Gain practical skills and experience while working in a real-world environment. It combines theoretical knowledge with practical application, enabling trainees to learn directly from tasks, tools, and processes.​",
     tools: [
       {
         backgroundImage: '13.png',

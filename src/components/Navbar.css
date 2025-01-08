@@ -1,20 +1,19 @@
 /* General styling */
 .navbar {
   display: flex;
-  /* flex-wrap: wrap;
-  justify-content: space-between; */
-  /* Ensure space between elements */
   align-items: center;
-  /* Align items vertically */
+  width:100vw;
 }
 
 .app-bar {
   background-color: white;
   color: #252525;
   box-shadow: none;
+  
 }
 .toolbar{
   height: auto;
+  width:100vw;
 
 }
 
@@ -108,7 +107,10 @@
 }
 
 @media (min-width: 601px) {
-
+.navbar{
+  width: 100vw !important;
+  overflow: hidden;
+}
 
   .nav-items {
     /* display: flex; */

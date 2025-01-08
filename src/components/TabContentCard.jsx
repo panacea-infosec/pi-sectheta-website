@@ -18,19 +18,21 @@ export const TabContentCard = (props) => {
         <div id={props.id} className="tab-pane fade">
           <h1>{props.title}</h1>
           <div className="intro-sec">
-            <p>{props.intro}</p>
+          {props.link ? (
+      <img src={props.link} alt="journey" width='100%'/>
+    ) : (
+      <p>{props.intro}</p>
+    )}
           </div>
-          <div className="items-section" >
+          {/* <div className="items-section" >
             <h1>Tools and resources</h1>
             <div className='hexagon-container' style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', alignItems:'center', justifyItems:'center'
             }}>
-            {/* <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', alignItems:'center', justifyItems:'center'
-            }}> */}
               {props.tools.map((tool, index) => (
                 <HexagonGridItem key={index} {...tool} />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       )
 }

@@ -47,32 +47,28 @@ export const EnrollToday = () => {
       </Box>
 
       <Box className="text-box-container">
-        <Box className="text-box">
+        <Box className="c-text-box">
           <Typography>
-            You are a fresh or final year engineering or computer application
-            graduate looking for a break in Information Security and Cyber
-            security Industry.
+          You are a fresh or final-year engineering/computer application graduate seeking a break in the cybersecurity industry.
           </Typography>
         </Box>
-        <Box className="text-box text-box-dark">
+        <Box className="c-text-box text-box-dark">
           <Typography>
-            You want to be a future Chief Information Security Officer (CISO),
-            Security Consultant or Ethical Hacking Technology Advisor.
+          “You want to be a future Chief Information Security Officer (CISO), Security Consultant, or Ethical Hacking Technology Advisor.
           </Typography>
         </Box>
-        <Box className="text-box">
+        <Box className="c-text-box">
           <Typography>
             You have strong inclination towards future technologies in
             Information & Network and cybersecurity space.
           </Typography>
         </Box>
-        <Box className="text-box text-box-dark">
+        <Box className="c-text-box text-box-dark">
           <Typography>
-            You have a strong longing to enhance your professional status and
-            capabilities or to venture into a different field.
+          You strongly long to enhance your professional status and capabilities or venture into a different field.
           </Typography>
         </Box>
-        <Box className="text-box">
+        <Box className="c-text-box">
           <Typography>
             You seek a program with guaranteed internship & job assistance with
             intensive but flexible hybrid learning options.

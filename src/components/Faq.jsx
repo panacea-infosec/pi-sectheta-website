@@ -17,13 +17,13 @@ const data = [
   {
     id: 2,
     question: 'Q- What is the cost of this training? ',
-    answer: '-The complete cost of training is Rs. XXXXXX. The student will be offered a basic stipend during the internship program to cover for transportation.',
+    answer: 'Sign up for the program above, and we’ll provide you with the fee details shortly.',
     defaultExpanded: false,
   },
   {
     id: 3,
     question: 'Q- Do I need prior programming knowledge? ',
-    answer: 'Yes, a basic knowledge of programming language like XXXX is necessary.',
+    answer: 'No, coding knowledge is not mandatory; however, having it can be beneficial.',
     defaultExpanded: false,
   },
   {

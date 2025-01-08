@@ -68,8 +68,8 @@ function Home() {
       </Box>
       <ApplyNow />
       <IndustryExperts />
-      <MentorSpeak />
-      <Reviews />
+      {/* <MentorSpeak /> */}
+      {/* <Reviews /> */}
       <Info />
       <Faq />
       <Footer />

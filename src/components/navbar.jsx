@@ -17,7 +17,8 @@ import Button from '@mui/material/Button';
 import StickyFooter from './stickyFooter';
 import './Navbar.css';
 
-const navItems = ['About us', 'Training & Certification', 'University Outreach Program', 'Contact us']; // Re-add this line if it was accidentally removed
+// const navItems = ['About us', 'Training & Certification', 'University Outreach Program', 'Contact us']; // Re-add this line if it was accidentally removed
+const navItems = ['About us', 'Contact us']; // Re-add this line if it was accidentally removed
 
 function Navbar(props) {
   const { window } = props;
@@ -49,9 +50,9 @@ function Navbar(props) {
 
   return (
     <React.Fragment>
-      <Box className="navbar">
+      <Box className="navbar" >
         <CssBaseline />
-        <AppBar component="nav" className="app-bar">
+        <AppBar component="nav" className="app-bar" sx={{marginRight:0}}>
           <StickyFooter />
           <Toolbar className='toolbar'>
             <IconButton

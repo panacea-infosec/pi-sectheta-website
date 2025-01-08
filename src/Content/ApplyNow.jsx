@@ -10,12 +10,12 @@ export const ApplyNow = () => {
             variant="h4"
             className="apply-now-title"
           >
-            We create leaders in Cybersecurity who learn<br/> to thrive during uncertain times.
+            We create leaders in Cybersecurity who learn to thrive during uncertain times.
           </Typography>
           <Typography className="apply-now-list">
             <ul>
-                <li>Job readiness program with highly experiential curriculum in information & payment security</li>
-                <li>Certification for enhancing students' credentials and marketability in cybersecurity job market</li>
+                <li>Job readiness program with a highly experiential curriculum in information & payment security</li>
+                <li>Certification for enhancing students' credentials and marketability in the cybersecurity job market</li>
                 <li>Leverage a network of industry leaders with lifelong learning that extends beyond this program</li>
             </ul>
           </Typography>

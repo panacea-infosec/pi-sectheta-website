@@ -37,7 +37,7 @@ export const LiveDemo = () => {
       pt: 6, mt: '2%', pb: 6, pl: 6, pr: 6, backgroundColor: '#e6e6e6', borderRadius: '50px',
       width: { md: '70%', xs: '100%' }
     }}>
-      <Typography variant="h6" align="left" sx={{ fontFamily: 'Manrope', color: '#525252' }}>Experience the program for <span style={{ color: '#DA3D33' }}>Free!</span></Typography>
+      <Typography variant="h6" align="left" sx={{ fontFamily: 'Manrope', color: '#525252' }}>Secure your spot in the <span style={{ color: '#DA3D33' }}>program!</span></Typography>
       <TextField
         label="Name"
         fullWidth
@@ -134,8 +134,8 @@ export const LiveDemo = () => {
         />
       </Box>
       <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <Button variant="contained" color="primary" type="submit" sx={{ mt: '10px', pl: '20px', pr: '20px', pt: '10px', pb: '10px', borderRadius: '25px', textTransform: 'none' }}>
-          Book a live-class
+        <Button variant="contained" color="primary" type="submit" sx={{ mt: '10px', pl: '20px', pr: '20px', pt: '6px', pb: '6px', borderRadius: '25px', textTransform: 'none' }}>
+          Register
         </Button>
       </Box>
     </Box>

@@ -55,7 +55,7 @@ export const WhySec = () => {
         <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: { xs: '1fr', sm: 'repeat(3, 1fr)' }, // One column on small screens, two columns on larger screens
+        gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }, // One column on small screens, two columns on larger screens
         rowGap: 4,
         columnGap:4,
         placeItems:'center'

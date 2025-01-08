@@ -23,7 +23,6 @@
 
     .intro-button {
         display: flex;
-        width: 40%;
         margin: 10px !important;
         justify-content: center;
         align-self: center;

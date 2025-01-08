@@ -18,7 +18,7 @@ import './stickyFooter.css';
 export default function StickyFooter() {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="header-container">
         <div className="footer-content">
           <AutoAwesomeIcon className="footer-icon" />
           <span className="footer-text">

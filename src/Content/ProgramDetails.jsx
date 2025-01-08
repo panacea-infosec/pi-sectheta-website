@@ -33,7 +33,7 @@ const data = [
   {
     id: 5,
     Title: 'Program Starts',
-    content: 'Jan 2025',
+    content: 'Feb 2025',
     image: './program_details/33.png',
     color: '#bcb5e7'
   },
@@ -72,7 +72,7 @@ export const ProgramDetails = () => {
           fontWeight: 800,
           textAlign: "center",
           lineHeight: 0.5,
-          marginY: '8%',
+          margin: '8%',
           width: '100%'
         }}
       >
@@ -81,7 +81,7 @@ export const ProgramDetails = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: { xs: '2fr', sm: 'repeat(4, 1fr)' }, // One column on small screens, two columns on larger screens
+          gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)', lg:'repeat(4, 1fr)' }, // One column on small screens, two columns on larger screens
           rowGap: 4,
           columnGap: 4,
           placeItems: 'center'

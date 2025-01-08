@@ -9,7 +9,7 @@ export const CourseDetails = () => {
         <Box className="course-details-item">
           <Typography variant="body1" className="course-details-text">
             <b>Batch Starts:</b>
-            <span className="course-details-value">January 2025</span>
+            <span className="course-details-value">February 2025</span>
           </Typography>
         </Box>
         <Box className="course-details-item">
