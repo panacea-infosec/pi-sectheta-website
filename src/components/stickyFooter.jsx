@@ -25,7 +25,7 @@ export default function StickyFooter() {
             Master the art of security auditing with Sectheta
           </span>
         </div>
-        <button className="footer-button">Apply Now</button>
+        {/* <button className="footer-button">Apply Now</button> */}
       </div>
     </footer>
   );

@@ -21,9 +21,9 @@ export const Intro = () => {
         </ul>
       </Typography>
 
-      <Button className="intro-button" variant="contained" color="primary" sx={{ borderRadius:'25px'}}>
+      {/* <Button className="intro-button" variant="contained" color="primary" sx={{ borderRadius:'25px'}}>
         Download brochure
-      </Button>
+      </Button> */}
     </Box>
   );
 };

@@ -35,11 +35,11 @@ export const Info = () => {
         </Box>
       </Box>
 
-      <Box className="info-button-container">
+      {/* <Box className="info-button-container">
         <Button variant='contained' className="info-button">
           About us
         </Button>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
