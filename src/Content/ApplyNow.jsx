@@ -19,7 +19,7 @@ export const ApplyNow = () => {
                 <li>Leverage a network of industry leaders with lifelong learning that extends beyond this program</li>
             </ul>
           </Typography>
-          <Button variant="contained" className="apply-now-button">Apply Now</Button>
+          {/* <Button variant="contained" className="apply-now-button">Apply Now</Button> */}
         </Box>
         <Box className="apply-now-right">
             <img src='./images/apply-now.png' className="apply-now-image" alt="Apply Now" />
