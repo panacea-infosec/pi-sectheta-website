@@ -30,7 +30,7 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} className="drawer">
-      <Box className="drawer-logo">
+      <Box className="drawer-logo" >
         <img src="logo.png" alt="Logo" />
       </Box>
       <Divider />
@@ -65,7 +65,7 @@ function Navbar(props) {
               <MenuIcon />
             </IconButton>
             <Box className="logo-box">
-              <img src="logo.png" alt="Logo" />
+              <img src="logo.png" alt="Logo" style={{backgroundColor:'white'}}/>
             </Box>
             <Box className="nav-items">
               {navItems.map((item) => (

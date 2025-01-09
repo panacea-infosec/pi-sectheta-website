@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <Box className="footer-container">
       <Box className="footer-left">
-        <img className='footer-logo' src="logo.png" alt="company logo" width="200px" />
+        <img className='footer-logo' src="logo.png" alt="company logo" width="200px" style={{backgroundColor:'white'}}/>
         <Box className="footer-description">
           <Typography variant="body1">
             Sectheta is dedicated to bridging the gap between academic knowledge and industry demands in the field of cybersecurity, information security and payment security through its comprehensive curriculum designed by industry experts that are tailored for engineering and MCA graduates.
