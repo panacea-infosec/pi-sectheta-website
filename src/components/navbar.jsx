@@ -64,6 +64,7 @@ function Navbar(props) {
             >
               <MenuIcon />
             </IconButton>
+            
             <Box className="logo-box">
               <img src="logo.png" alt="Logo" style={{backgroundColor:'white'}}/>
             </Box>
