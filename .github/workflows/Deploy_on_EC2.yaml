@@ -2,33 +2,40 @@
 name: Deploy to EC2
   
 on:
-    push:
-      branches:
-        - responsive
-    workflow_dispatch:
-  
+   push:
+     branches:
+       - responsive
+   workflow_dispatch:
+ 
 jobs:
-    Deployment_on_EC2:
-      runs-on: ubuntu-latest
-    
-      steps:
-      
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
+   Deployment_on_EC2:
+     runs-on: ubuntu-latest
   
-        
-      - name: Deploying code on EC2
-        run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@13.200.156.51 << EOF
-            set -e                                          
-            cd /home/ubuntu/pi-sectheta-website
-            git branch
-            git pull origin
-            npm install
-            cd /home/ubuntu
-            ./restart.sh
-            sudo systemctl reload nginx 
-          EOF
+     steps:
+    
+     - name: Set up SSH
+       uses: webfactory/ssh-agent@v0.5.3
+       with:
+         ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
+ 
+      
+     - name: Deploying code on EC2
+       run: |
+         ssh -o StrictHostKeyChecking=no ubuntu@13.200.156.51 << EOF
+           set -e     
+      
+
+           cd /home/ubuntu/pi-sectheta-website
+           git branch
+           git pull origin
+           npm install
+           export REACT_APP_SERVICE_ID=${{ secrets.REACT_APP_SERVICE_ID }}
+           export REACT_APP_TEMPLATE_ID=${{ secrets.REACT_APP_TEMPLATE_ID }}
+           export REACT_APP_USER_ID=${{ secrets.REACT_APP_USER_ID }}
+           export REACT_APP_SECRET_KEY=${{ secrets.REACT_APP_SECRET_KEY }}  
+
+           cd /home/ubuntu
+           ./restart.sh
+           sudo systemctl reload nginx 
+         EOF
     
