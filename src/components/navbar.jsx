@@ -15,10 +15,14 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import StickyFooter from './stickyFooter';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 import './Navbar.css';
 
-// const navItems = ['About us', 'Training & Certification', 'University Outreach Program', 'Contact us']; // Re-add this line if it was accidentally removed
-const navItems = ['About us', 'Contact us']; // Re-add this line if it was accidentally removed
+const navItems = [
+  { label: 'Home', path: '/' },
+  { label: 'About us', path: '/about' },
+  { label: 'Contact us', path: '/' },
+];
 
 function Navbar(props) {
   const { window } = props;
@@ -30,16 +34,33 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} className="drawer">
-      <Box className="drawer-logo" >
+      <Box className="drawer-logo">
         <img src="logo.png" alt="Logo" />
       </Box>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton className="drawer-item">
-              <ListItemText className="drawer-text" primary={item} />
-            </ListItemButton>
+          <ListItem key={item.label} disablePadding>
+            <ListItemButton className="drawer-item" sx={{ padding: 0 }}>
+  <Link
+    to={item.path}
+    style={{
+      textDecoration: 'none',
+      color: '#454545',
+      display: 'block', // Ensures the link spans the full width for easy clicking
+      width: '100%', // Matches the full width of the ListItemButton
+    }}
+  >
+    <ListItemText
+      className="drawer-text"
+      primary={item.label}
+      sx={{
+        padding: '12px 16px', // Adjust for spacing inside the drawer
+      }}
+    />
+  </Link>
+</ListItemButton>
+
           </ListItem>
         ))}
       </List>
@@ -50,11 +71,11 @@ function Navbar(props) {
 
   return (
     <React.Fragment>
-      <Box className="navbar" >
+      <Box className="navbar">
         <CssBaseline />
-        <AppBar component="nav" className="app-bar" sx={{marginRight:0}}>
+        <AppBar component="nav" className="app-bar" sx={{ marginRight: 0 }}>
           <StickyFooter />
-          <Toolbar className='toolbar'>
+          <Toolbar className="toolbar">
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -64,14 +85,20 @@ function Navbar(props) {
             >
               <MenuIcon />
             </IconButton>
-            
             <Box className="logo-box">
-              <img src="logo.png" alt="Logo" style={{backgroundColor:'white'}}/>
+              <img src="logo.png" alt="Logo" style={{ backgroundColor: 'white' }} />
             </Box>
             <Box className="nav-items">
               {navItems.map((item) => (
-                <Button key={item} className="nav-button">
-                  {item}
+                <Button key={item.label} className="nav-button">
+                  <Link to={item.path} className="nav-link" style={{
+      textDecoration: 'none',
+      color: 'white',
+      display: 'block', // Ensures the link spans the full width for easy clicking
+      width: '100%', // Matches the full width of the ListItemButton
+    }}>
+                    {item.label}
+                  </Link>
                 </Button>
               ))}
             </Box>
@@ -95,5 +122,9 @@ function Navbar(props) {
     </React.Fragment>
   );
 }
+
+Navbar.propTypes = {
+  window: PropTypes.func,
+};
 
 export default Navbar;
