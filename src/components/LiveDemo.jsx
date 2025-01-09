@@ -32,6 +32,9 @@ export const LiveDemo = () => {
     console.log('Form submitted:', { name, email, phone, countryCode });
   };
 
+  const something = process.env.REACT_APP_SECRET_KEY;
+  console.log("This is the serviceId from env variables", something);
+
   return (
     <Box component="form" onSubmit={handleSubmit} sx={{
       pt: 6, mt: '2%', pb: 6, pl: 6, pr: 6, backgroundColor: '#e6e6e6', borderRadius: '50px',
