@@ -15,7 +15,7 @@ const IndustryExperts = () => {
 
   const experts = [
     { name: 'Ajay Kaushik', title: 'Chief Executive Officer', imgSrc: './images/Experts/1.png' },
-    { name: 'Jitendra Mishra', title: 'Director and Head - Global Operations', imgSrc: './images/Experts/2.png' },
+    { name: 'Jitendra Khanna', title: 'Director and Head - Global Operations', imgSrc: './images/Experts/2.png' },
     { name: 'Himanshu Mishra', title: 'VP – Consulting & Compliance', imgSrc: './images/Experts/3.png' },
     { name: 'Kailash D Aggarwal', title: 'AVP - Consulting & Compliance', imgSrc: './images/Experts/4.png' },
   ];
