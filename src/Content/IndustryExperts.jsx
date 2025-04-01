@@ -20,7 +20,7 @@ const IndustryExperts = () => {
       imgSrc: './images/Experts/1.png',
     },
     {
-      name: 'Jitendra Mishra',
+      name: 'Jitender Khanna',
       title: 'VP – Consulting & Compliance',
       imgSrc: './images/Experts/2.png',
     },
